@@ -24,5 +24,7 @@ int main()
     const double pond_diameter { 2.0 * std::sqrt(pond_area / pi)};
 
     std::cout << "\nPond diameter required for " << fish_count << 
-            " koi carp is " << pond_diameter << " feet.\n";
+            " koi carp is "  
+            << std::scientific  
+            << pond_diameter << " feet.\n";
 }
